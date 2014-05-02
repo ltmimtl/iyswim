@@ -1,0 +1,18 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
+    %title=content_for?(:title) ? yield(:title) : "foundation-rails"
+    =stylesheet_link_tag "application"
+    =javascript_include_tag "vendor/modernizr"
+    =csrf_meta_tags
+  %body
+    %nav.top-bar{"data-topbar" => ""}
+      %ul.title-area
+        %li.name
+          %h1=link_to "IYSWIM", root_path
+    .row
+      .small-12.columns
+        =yield
+    =javascript_include_tag "application"
