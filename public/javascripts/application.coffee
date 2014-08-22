@@ -8,7 +8,7 @@ init = (container) ->
     wireframe: true
   mesh = new THREE.Mesh(geometry, material)
   scene.add(mesh)
-  renderer = new THREE.CanvasRenderer()
+  renderer = new THREE.WebGLRenderer()
   renderer.setSize(container.innerWidth(), container.innerWidth())
   container.append(renderer.domElement)
   animate = ->
@@ -22,5 +22,5 @@ init = (container) ->
 jQuery ->
   $(document).foundation()
   $(".home_animation").each (index) ->
-  init($(this))
+    init($(this))
   #animate()
