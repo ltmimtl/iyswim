@@ -1,7 +1,9 @@
+require 'bundler'
+Bundler.require
 require 'sinatra'
-require 'haml'
-require 'coffee_script'
-require 'sass'
+require 'tilt/haml'
+require 'tilt/coffee'
+require 'tilt/sass'
 
 set :haml, format: :html5, layout: :layout
 
@@ -17,5 +19,5 @@ end
 
 get '/styles/*.css' do
   filename = params[:splat].first
-  sass "../public/styles/#{filename}".to_sym
+  scss "../public/styles/#{filename}".to_sym
 end

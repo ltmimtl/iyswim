@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/sinatra/sinatra.git
-  revision: 79c5e311d1686b434e719e4804869c1de118b056
+  revision: be9c18ac44214069f4709ced6da65abba9501d24
   specs:
     sinatra (1.4.5)
       rack (~> 1.4)
@@ -10,17 +10,17 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    coffee-script (2.2.0)
+    coffee-script (2.3.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.7.0)
-    execjs (2.0.2)
-    haml (4.0.5)
+    coffee-script-source (1.9.1)
+    execjs (2.3.0)
+    haml (4.0.6)
       tilt
-    rack (1.5.2)
+    rack (1.6.0)
     rack-protection (1.5.3)
       rack
-    sass (3.2.19)
+    sass (3.4.13)
     tilt (2.0.1)
 
 PLATFORMS
