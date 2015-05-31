@@ -5,3 +5,6 @@ gem 'sinatra', :github => "sinatra/sinatra"
 gem 'haml'
 gem 'coffee-script'
 gem 'sass'
+
+gem 'execjs'
+gem 'therubyracer'
